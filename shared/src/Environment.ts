@@ -18,16 +18,16 @@ export default class Environment {
   }
 
   private getPort = (): number => {
-    const portVar = process.env.SERVER_PORT;
+    const portVar = process.env.NEXT_PUBLIC_SERVER_PORT;
 
     if (!portVar) {
-      throw "SERVER_PORT not set!";
+      throw "NEXT_PUBLIC_SERVER_PORT not set!";
     }
 
     const port = parseInt(portVar);
 
     if (Number.isNaN(port)) {
-      throw "SERVER_PORT set wrong!";
+      throw "NEXT_PUBLIC_SERVER_PORT not an integer!";
     }
 
     return port;
