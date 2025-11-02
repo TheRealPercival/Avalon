@@ -1,0 +1,20 @@
+{
+  "name": "@avalon/shared",
+  "version": "1.0.0",
+  "description": "Shared resources for Avalon projects",
+  "license": "MIT",
+  "author": "The Real Percival",
+  "type": "commonjs",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc -b",
+    "clean": "rm -rf dist tsconfig.tsbuildinfo"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.3"
+  },
+  "devDependencies": {
+    "@types/node": "^24.9.2"
+  }
+}

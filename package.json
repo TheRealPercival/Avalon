@@ -1,0 +1,16 @@
+{
+  "private": true,
+  "workspaces": [
+    "server",
+    "shared"
+  ],
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  },
+  "scripts": {
+    "start:server": "npm start --workspace=@avalon/server",
+    "dev:server": "npm run dev --workspace=@avalon/server",
+    "build": "tsc -b",
+    "clean": "npm run clean --workspace=@avalon/server && npm run clean --workspace=@avalon/shared"
+  }
+}

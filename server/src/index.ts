@@ -1,2 +1,4 @@
-let message: string = "Hello world!";
-console.log(message);
+import { Environment } from "@avalon/shared";
+import AvalonServer from "./utils/AvalonServer";
+
+new AvalonServer(Environment.current.port);
