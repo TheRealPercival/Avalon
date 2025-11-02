@@ -1,0 +1,20 @@
+{
+  "name": "avalon-server",
+  "version": "1.0.0",
+  "description": "Socket.IO TypeScript server for Avalon",
+  "license": "MIT",
+  "author": "The Real Percival",
+  "type": "commonjs",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "node dist/index.js",
+    "build": "tsc -b",
+    "clean": "rm -rf dist tsconfig.tsbuildinfo",
+    "dev": "ts-node-dev src/index.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^24.9.2",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.9.3"
+  }
+}
