@@ -1,16 +1,19 @@
 {
   "private": true,
   "workspaces": [
-    "server",
-    "shared"
+    "shared",
+    "client",
+    "server"
   ],
   "devDependencies": {
     "typescript": "^5.9.3"
   },
   "scripts": {
+    "start:client": "npm start --workspace=@avalon/client",
+    "dev:client": "npm run dev --workspace=@avalon/client",
     "start:server": "npm start --workspace=@avalon/server",
     "dev:server": "npm run dev --workspace=@avalon/server",
-    "build": "tsc -b",
-    "clean": "npm run clean --workspace=@avalon/server && npm run clean --workspace=@avalon/shared"
+    "build": "tsc -b && npm run build --workspace=@avalon/client",
+    "clean": "npm run clean --workspace=@avalon/client && npm run clean --workspace=@avalon/server && npm run clean --workspace=@avalon/shared"
   }
 }
