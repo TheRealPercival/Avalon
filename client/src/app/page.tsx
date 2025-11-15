@@ -22,6 +22,7 @@ const LoginScreen = () => {
           fontWeight: "bold",
           cursor: "pointer",
           userSelect: "none",
+          WebkitTapHighlightColor: "transparent",
         }}
         onClick={() => setShowPopup(!showPopup)}
       >

@@ -19,6 +19,7 @@ const RequestAccessButton = ({
         }`,
         color: accessRequested ? "rgba(255, 255, 255, 0.5)" : "",
         cursor: accessRequested ? "default" : "pointer",
+        WebkitTapHighlightColor: "transparent",
       }}
       onClick={accessRequested ? undefined : () => setAccessRequested(true)}
     >

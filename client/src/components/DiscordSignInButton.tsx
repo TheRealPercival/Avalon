@@ -12,6 +12,7 @@ const DiscordSignInButton = () => {
         borderRadius: "5px",
         backgroundColor: "#5865F2",
         fontFamily: "Discord",
+        WebkitTapHighlightColor: "transparent",
       }}
     >
       <Image
@@ -24,6 +25,6 @@ const DiscordSignInButton = () => {
       Sign in with Discord
     </button>
   );
-}
+};
 
 export default DiscordSignInButton;
