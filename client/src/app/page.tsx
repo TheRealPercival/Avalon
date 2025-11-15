@@ -78,7 +78,7 @@ const LoginScreen = () => {
               This is a private server that you must request access from the
               owner to join. Find out how to deploy your own instance{" "}
               <a
-                href="https://github.com/TheRealPercival/Avalon/tree/main"
+                href="https://github.com/TheRealPercival/Avalon"
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{ color: "lightblue", textDecoration: "underline" }}
