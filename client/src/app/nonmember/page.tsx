@@ -52,7 +52,8 @@ const NonMemberPage = () => {
               padding: "10px 20px",
               fontSize: "16px",
               borderRadius: "5px",
-              border: "2px solid",
+              border: "2px solid rgba(255, 255, 255, 0.5)",
+              color: "rgba(255, 255, 255, 0.5)",
             }}
           >
             Access Requested
