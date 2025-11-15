@@ -1,70 +1,84 @@
-import Image from "next/image";
-import styles from "./page.module.css";
-import ClientComponent from "./ClientComponent";
+"use client";
+import { useState } from "react";
+import PopupMessage from "@/components/PopupMessage";
+import DiscordSignInButton from "@/components/DiscordSignInButton";
 
-export default function Home() {
+const LoginScreen = () => {
+  const [showPopup, setShowPopup] = useState(false);
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className={styles.intro}>
-          <h1>
-            To get started, edit the page.tsx file.
-            <ClientComponent />
-          </h1>
-          <p>
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className={styles.ctas}>
+    <>
+      <div
+        style={{
+          position: "absolute",
+          top: "20px",
+          right: "20px",
+          width: "24px",
+          height: "24px",
+          borderRadius: "12px",
+          border: "2px solid",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          fontWeight: "bold",
+          cursor: "pointer",
+          userSelect: "none",
+          WebkitTapHighlightColor: "transparent",
+        }}
+        onClick={() => setShowPopup(!showPopup)}
+      >
+        i
+      </div>
+      <PopupMessage
+        header={"About"}
+        showPopup={showPopup}
+        setShowPopup={setShowPopup}
+      >
+        <p>
+          This is a private server that you must request access from the owner
+          to join. Find out how to deploy your own instance{" "}
           <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
+            href="https://github.com/TheRealPercival/Avalon"
             target="_blank"
             rel="noopener noreferrer"
+            style={{ color: "lightblue", textDecoration: "underline" }}
           >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
+            here
           </a>
-          <a
-            className={styles.secondary}
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+          .
+        </p>
+        <br />
+        <p>
+          The game is based on the social role-playing card-based social
+          deduction party game made by Don Eskridge.
+        </p>
+      </PopupMessage>
+      <div>
+        <h1
+          style={{
+            fontSize: "48px",
+            fontWeight: "bold",
+            textAlign: "center",
+            marginTop: "20vh",
+            userSelect: "none",
+          }}
+        >
+          Avalon
+        </h1>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            position: "absolute",
+            bottom: "10vw",
+            left: "0",
+            right: "0",
+          }}
+        >
+          <DiscordSignInButton />
         </div>
-      </main>
-    </div>
+      </div>
+    </>
   );
-}
+};
+
+export default LoginScreen;
