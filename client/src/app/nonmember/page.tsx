@@ -1,4 +1,5 @@
 "use client";
+import RequestAccessButton from "@/components/RequestAccessButton";
 import { useState } from "react";
 
 const NonMemberPage = () => {
@@ -43,38 +44,10 @@ const NonMemberPage = () => {
           .
         </p>
         <br />
-        {accessRequested ? (
-          <div
-            style={{
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              padding: "10px 20px",
-              fontSize: "16px",
-              borderRadius: "5px",
-              border: "2px solid rgba(255, 255, 255, 0.5)",
-              color: "rgba(255, 255, 255, 0.5)",
-            }}
-          >
-            Access Requested
-          </div>
-        ) : (
-          <div
-            style={{
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              padding: "10px 20px",
-              fontSize: "16px",
-              cursor: "pointer",
-              borderRadius: "5px",
-              border: "2px solid",
-            }}
-            onClick={() => setAccessRequested(true)}
-          >
-            Request Access
-          </div>
-        )}
+        <RequestAccessButton
+          accessRequested={accessRequested}
+          setAccessRequested={setAccessRequested}
+        />
       </div>
     </div>
   );
