@@ -40,3 +40,10 @@ a {
     color-scheme: dark;
   }
 }
+
+@font-face {
+  font-family: "Discord";
+  src: url("/fonts/ABCGintoDiscord-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
