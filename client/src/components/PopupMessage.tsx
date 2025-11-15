@@ -1,13 +1,13 @@
 const PopupMessage = ({
   header,
   children,
-  showPopup,
+  showPopup = true,
   setShowPopup,
 }: {
-  header: string;
+  header?: string;
   children: React.ReactNode;
-  showPopup: boolean;
-  setShowPopup: (value: boolean) => void;
+  showPopup?: boolean;
+  setShowPopup?: (value: boolean) => void;
 }) => {
   return (
     showPopup && (
@@ -35,30 +35,34 @@ const PopupMessage = ({
             zIndex: 10,
           }}
         >
-          <div
-            style={{
-              display: "flex",
-              justifyContent: "space-between",
-              alignItems: "center",
-            }}
-          >
-            <h2>{header}</h2>
-            <div
-              style={{
-                height: "24px",
-                width: "24px",
-                alignContent: "center",
-                justifyContent: "center",
-                textAlign: "center",
-                fontSize: "18px",
-                cursor: "pointer",
-              }}
-              onClick={() => setShowPopup(!showPopup)}
-            >
-              ✖
-            </div>
-          </div>
-          <br />
+          {header && (
+            <>
+              <div
+                style={{
+                  display: "flex",
+                  justifyContent: "space-between",
+                  alignItems: "center",
+                }}
+              >
+                <h2>{header}</h2>
+                <div
+                  style={{
+                    height: "24px",
+                    width: "24px",
+                    alignContent: "center",
+                    justifyContent: "center",
+                    textAlign: "center",
+                    fontSize: "18px",
+                    cursor: "pointer",
+                  }}
+                  onClick={() => setShowPopup?.(false)}
+                >
+                  ✖
+                </div>
+              </div>
+              <br />
+            </>
+          )}
           {children}
         </div>
       </div>
