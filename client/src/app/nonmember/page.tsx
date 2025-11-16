@@ -15,7 +15,7 @@ const NonMemberPage = () => {
           href="https://github.com/TheRealPercival/Avalon"
           target="_blank"
           rel="noopener noreferrer"
-          style={{ color: "var(--link-text)", textDecoration: "underline" }}
+          style={{ textDecoration: "underline" }}
         >
           here
         </a>

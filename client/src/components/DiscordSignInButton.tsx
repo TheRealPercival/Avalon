@@ -11,7 +11,7 @@ const DiscordSignInButton = () => {
         cursor: "pointer",
         borderRadius: "5px",
         color: "white",
-        backgroundColor: "#5865F2",
+        backgroundColor: "var(--discord-blurple)",
         fontFamily: "Discord",
         WebkitTapHighlightColor: "transparent",
       }}
