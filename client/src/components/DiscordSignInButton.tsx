@@ -4,8 +4,10 @@ const DiscordSignInButton = () => {
   return (
     <button
       style={{
-        display: "flex",
+        display: "grid",
+        gridTemplateColumns: "24px auto",
         alignItems: "center",
+        columnGap: "16px",
         padding: "10px 20px",
         fontSize: "16px",
         cursor: "pointer",
@@ -21,11 +23,11 @@ const DiscordSignInButton = () => {
         alt="Discord Logo"
         width={24}
         height={24}
-        style={{ marginRight: "16px" }}
       />
-      Sign in with Discord
+      <span>Sign in with Discord</span>
     </button>
   );
 };
+
 
 export default DiscordSignInButton;
