@@ -48,8 +48,8 @@ const LoginScreen = () => {
         </p>
         <br />
         <p>
-          The game is based on the social role-playing card-based social
-          deduction party game made by Don Eskridge.
+          The game is based on the card-based role-playing social deduction
+          party game made by Don Eskridge.
         </p>
       </PopupMessage>
       <div>
