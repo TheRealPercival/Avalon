@@ -40,7 +40,7 @@ const LoginScreen = () => {
             href="https://github.com/TheRealPercival/Avalon"
             target="_blank"
             rel="noopener noreferrer"
-            style={{ color: "lightblue", textDecoration: "underline" }}
+            style={{ color: "var(--link-text)", textDecoration: "underline" }}
           >
             here
           </a>

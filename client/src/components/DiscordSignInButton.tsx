@@ -10,6 +10,7 @@ const DiscordSignInButton = () => {
         fontSize: "16px",
         cursor: "pointer",
         borderRadius: "5px",
+        color: "white",
         backgroundColor: "#5865F2",
         fontFamily: "Discord",
         WebkitTapHighlightColor: "transparent",

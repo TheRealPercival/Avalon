@@ -27,10 +27,10 @@ const PopupMessage = ({
           style={{
             padding: "16px",
             margin: "25vh 10vw",
-            border: "2px solid white",
+            border: "2px solid foreground",
             borderRadius: "8px",
             backgroundColor: "background",
-            color: "white",
+            color: "foreground",
             fontSize: "14px",
             zIndex: 10,
           }}
