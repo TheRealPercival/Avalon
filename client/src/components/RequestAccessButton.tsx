@@ -1,10 +1,9 @@
-const RequestAccessButton = ({
-  accessRequested,
-  setAccessRequested,
-}: {
-  accessRequested: boolean;
-  setAccessRequested: (value: boolean) => void;
-}) => {
+"use client";
+import { useState } from "react";
+
+const RequestAccessButton = () => {
+  const [accessRequested, setAccessRequested] = useState(false);
+
   return (
     <div
       style={{

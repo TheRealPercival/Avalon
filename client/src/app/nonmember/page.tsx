@@ -1,11 +1,7 @@
-"use client";
 import RequestAccessButton from "@/components/RequestAccessButton";
 import PopupMessage from "@/components/PopupMessage";
-import { useState } from "react";
 
 const NonMemberPage = () => {
-  const [accessRequested, setAccessRequested] = useState(false);
-
   return (
     <PopupMessage>
       <p>
@@ -22,10 +18,7 @@ const NonMemberPage = () => {
         .
       </p>
       <br />
-      <RequestAccessButton
-        accessRequested={accessRequested}
-        setAccessRequested={setAccessRequested}
-      />
+      <RequestAccessButton />
     </PopupMessage>
   );
 };
