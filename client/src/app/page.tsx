@@ -6,30 +6,29 @@ const LoginScreen = () => {
     <>
       <PopupSection />
 
-      <div>
+      <div
+        style={{
+          display: "grid",
+          gridTemplateRows: "1fr auto 1fr",
+          alignItems: "center",
+          minHeight: "100dvh",
+          padding: "1rem",
+          textAlign: "center",
+        }}
+      >
         <h1
           style={{
             fontSize: "48px",
             fontWeight: "bold",
-            textAlign: "center",
-            marginTop: "20vh",
             userSelect: "none",
           }}
         >
           Avalon
         </h1>
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            position: "absolute",
-            bottom: "10vw",
-            left: "0",
-            right: "0",
-          }}
-        >
+        <div style={{ display: "grid", placeItems: "center" }}>
           <DiscordSignInButton />
         </div>
+        <div />
       </div>
     </>
   );
