@@ -18,7 +18,14 @@ const NonMemberPage = () => {
         .
       </p>
       <br />
-      <RequestAccessButton />
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+        }}
+      >
+        <RequestAccessButton />
+      </div>
     </PopupMessage>
   );
 };
