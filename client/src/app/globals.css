@@ -1,12 +1,15 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --link-text: #1a0dab;
+  --discord-blurple: #5865F2;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+    --link-text: #8ab4f8;
   }
 }
 
@@ -31,7 +34,7 @@ body {
 }
 
 a {
-  color: inherit;
+  color: var(--link-text);
   text-decoration: none;
 }
 
@@ -39,4 +42,11 @@ a {
   html {
     color-scheme: dark;
   }
+}
+
+@font-face {
+  font-family: "Discord";
+  src: url("/fonts/ABCGintoDiscord-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
