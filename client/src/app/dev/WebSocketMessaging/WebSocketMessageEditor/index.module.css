@@ -1,0 +1,9 @@
+.socketMessageEditor {
+  width: 40%;
+  min-height: 180px;
+  font-size: 18px;
+  font-family: Courier;
+  padding: 10px;
+  resize: none;
+  background-color: #ff000022;
+}

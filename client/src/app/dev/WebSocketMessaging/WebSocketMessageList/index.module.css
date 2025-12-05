@@ -1,0 +1,49 @@
+.socketMessageList {
+  display: flex;
+  flex-direction: column;
+  gap: 20;
+  width: 40%;
+  overflow-y: auto;
+}
+
+.socketMessageDetailRow {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.socketMessageDetailText {
+  font-size: 14px;
+}
+
+.serverMessageDetailText {
+  color: hsl(55, 50%, 50%);
+}
+
+.userMessageDetailText {
+  color: hsl(200, 50%, 50%);
+}
+
+.socketMessageBody {
+  background-color: #88888822;
+  font-size: 18px;
+  font-family: Courier;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid;
+  border-radius: 5px;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+}
+
+.serverMessageBody {
+  border-color: hsl(55, 60%, 30%);
+  color: hsl(55, 50%, 95%);
+  background-color: hsl(55, 15%, 10%);
+}
+
+.userMessageBody {
+  border-color: hsl(200, 60%, 30%);
+  color: hsl(200, 50%, 95%);
+  background-color: hsl(200, 15%, 10%);
+}

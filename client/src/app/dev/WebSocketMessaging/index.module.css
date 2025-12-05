@@ -1,0 +1,28 @@
+.devButton {
+  cursor: pointer;
+}
+
+.devButtonRow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+}
+
+.connectionIndicator {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+}
+
+.connectionIndicatorConnected {
+  background-color: limegreen;
+}
+
+.connectionIndicatorConnecting {
+  background-color: yellow;
+}
+
+.connectionIndicatorDisconnected {
+  background-color: red;
+}
